@@ -43,9 +43,8 @@ options = optimoptions(@LSQCURVEFIT,'Algorithm','trust-region-reflective','MaxIt
 % x(12)=3;% x(8)=-0.027;
 % x(9)=69;
 %-------------------------------------------------------------------------------------------------------------
-%     test=BackPeakJ2function(PeriodandTemperatureWaterGrainsize,x,2);
-%  AfigureplotJ1(J1,Period,x,J1theta,resnorm,'J1',b);
-%  AfigureplotJ2(J2log,Period,x,J2logtheta,resnorm,'J2log',b);
+
+
  plotQandS(Shear,Qm1,Period,x,J2logtheta,resnorm,'log(Q^{-1})','Shear modulus(GPa)',b); 
 %  plotQandS1(Shear,Qm1,Period,x,J2logtheta,resnorm,'log(Q^{-1})','Shear modulus(GPa)',b);
 %  plotQandSPaper(Shear,Qm1,Period,x,J2logtheta,resnorm,'log(Q^{-1})','Shear modulus(GPa)',b);
