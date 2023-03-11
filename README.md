@@ -5,5 +5,5 @@ in draw.mat:
 x is the resut of fitting parameters
 uncertainties are uncertainties of each parameters
 
-TpaperAttenation is used for caculating the Q value using data of draw.mat
+TpaperAttenation is used for calculating the Q value using data of draw.mat
 TpaperVelociy is used for calculating the Velocity profiles using data of draw.mat
