@@ -36,7 +36,7 @@ xH=[5      5   0.5       2e8          1e6           10e10        1e1         -0.
 %-----------------------------------------------------------------------------------------------------------
 
 b=1;
-
+% fit the J1 and J2 together, output the fitting results to X
 fun=@(X,PeriodandTemperiature) [BackPeakJ1function(PeriodandTemperatureWaterGrainsize,X,b)./J1theta,BackPeakJ2function(PeriodandTemperatureWaterGrainsize,X,b)./J2logtheta];
 options = optimoptions(@LSQCURVEFIT,'Algorithm','trust-region-reflective','MaxIterations',10000);
 % options.MaxFunctionEvaluations = 5000;
