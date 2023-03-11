@@ -4,6 +4,7 @@ clc
 % global J1theta
 % global J2logtheta
 
+% input data from file
 % -------------------------------------------------------------------------
 FileID=fopen('rawdata/threedata.txt');
 Y=textscan(FileID,'%f64 %f64 %f64 %f64 %f64 %f64 %f64 %f64 %f64');
