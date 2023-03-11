@@ -12,6 +12,8 @@ Period=[Y{1,1}];
 PeriodandTemperatureWaterGrainsize=[Y{1,1},Y{1,2},Y{1,3},Y{1,4}];
 Qm1=[Y{1,5}];
 Shear=[Y{1,6}];
+
+% calculate J1 and j2
 %--------------------------------------------------------------------------
 J1=1./(Shear.*(1.+Qm1.^2).^0.5);
 J1log=log10(J1);
@@ -19,6 +21,7 @@ J2=Qm1./(Shear.*(1.+Qm1.^2).^0.5);
 J2log=log10(J2);
 % -------------------------------------------------------------------------
 
+% set the amplitude of J1 and J2
 J1theta=0.005;
 J2logtheta=0.3;
 
