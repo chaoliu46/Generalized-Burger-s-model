@@ -54,6 +54,8 @@ options = optimoptions(@LSQCURVEFIT,'Algorithm','trust-region-reflective','MaxIt
    
     
 %-------------------------------------------------------------------------------------------------------------
+% calculate the uncertatines
+
 % theta=[repmat(1./J1theta.^2,[1 178]) repmat(1./J2logtheta.^2,[1 178])];
 theta=[repmat(1./J1theta,[1 numel(Period)]) repmat(1./J2logtheta,[1 numel(Period)])];
 W=diag(theta);
