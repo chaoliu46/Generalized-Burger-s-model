@@ -45,6 +45,7 @@ options = optimoptions(@LSQCURVEFIT,'Algorithm','trust-region-reflective','MaxIt
 % x(9)=69;
 %-------------------------------------------------------------------------------------------------------------
 
+% plot the figures with the fitting parameters
 
  plotQandS(Shear,Qm1,Period,x,J2logtheta,resnorm,'log(Q^{-1})','Shear modulus(GPa)',b); 
 %  plotQandS1(Shear,Qm1,Period,x,J2logtheta,resnorm,'log(Q^{-1})','Shear modulus(GPa)',b);
