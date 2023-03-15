@@ -1,6 +1,6 @@
 function BackPeakJ1=BackPeakJ1function(PeriodTemperatureWaterGrainsize,X,a)
 
-%fit Burgers model with only background with a=2 and only peak with a=0 and together with a=2
+%fit Burgers model with only background with a=2 and only peak with a=1 and together with a=2
 %X is the fitting parameter a=1 PeakBackfit, a=2 Backfit, a=3 Peakfit
 % result the fitting parameter
 
@@ -82,10 +82,7 @@ deltaPeak1(i)=deltaPeak.*(Water(i)/200)^rWaterP;
 % ------------------------------------------------------------------------------------------------------
  if a==1
      InterPeak(i)=deltaPeak1(i).*integral(@(tol)FunPeak(tol,Period(i),theta,Peak(i)),0,inf);
-%      syms tol1
-%      g=FunPeak(tol1,Period(i),theta1(i),Peak(i));
-%      g=@(tol)FunPeak(tol,Period(i),theta1(i),Peak(i));
-%      InterPeak(i)=deltaPeak1(i).*vpaintegral(g,0,inf);  
+
 %      InterPeak(i)=deltaPeak1(i).*integral(@(tol)FunPeak(tol,Period(i),theta1(i),Peak(i)),1e-5,1e3);
      InterBackground(i)=delta(i).*integral(@(tol) FunBackground(tol,alpha,Period(i)),Tollow(i),Tolhigh(i));
 
