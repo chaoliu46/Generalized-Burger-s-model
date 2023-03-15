@@ -1,6 +1,6 @@
 function BackPeakJ1=BackPeakJ1function(PeriodTemperatureWaterGrainsize,X,a)
 
-%fit Burgers model with only background with a=2 and only peak with a=1 and together with a=2
+%fit Burgers model with only background with a=2 and only peak with a=1 and together with a=3
 %X is the fitting parameter a=1 PeakBackfit, a=2 Backfit, a=3 Peakfit
 % result the fitting parameter
 
